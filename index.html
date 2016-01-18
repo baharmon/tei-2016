@@ -5,10 +5,10 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Template for lecture slides</title>
+        <title>Tangible Landscape &#64; TEI 2016</title>
 
-        <meta name="description" content="Template for lecture slides of NCSU OSGeoREL courses">
-        <meta name="author" content="Vaclav Petras">
+        <meta name="description" content="Embodied Cognition with Tangible Landscape">
+        <meta name="author" content="Brendan Harmon">
 
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -161,294 +161,98 @@
             <!-- Any section element inside of this container is displayed as a slide -->
             <div class="slides">
 <section>
-    <h2>Template for creating slides for NCSU OSGeoREL courses</h2>
-    <h3>a title slide</h3>
-    <h3 style="margin-top: 0.5em">
-        Vaclav Petras</h3>
-    <p class="title-foot">
-        <a href="http://www.ncsu.edu/" title="North Carolina State University">NCSU</a>
-        <a href="http://geospatial.ncsu.edu/osgeorel/" title="NCSU OSGeo Research and Education Laboratory">OSGeoREL</a>
-        at
-        <a href="http://geospatial.ncsu.edu/" title="Center for Geospatial Analytics">Center for Geospatial Analytics</a>
-        <br>
-    </p>
-    <p>September, 2014</p>
+<h2>Tangible Embedded Embodied Interaction 2016</h2>
+<h1>Embodied Cognition with Tangible Landscape</h1>
+<h3 style="margin-top: 2em">Brendan Harmon, Anna Petrasova, Vaclav Petras, &amp; Helena Mitasova</h3>
+<img height="100px" style="margin-top: 2em" src="img/cgaBlack.png">
 </section>
-<!-- This is a generated file. Do not edit. -->
-<section class="textimg">
-    <h2>Possible layouts in the left-right template</h2>
-    <ul>
-        <li>text on left, image on right</li>
-        <li>image on right, text on left</li>
-        <li>text can be:
-            <ul>
-                <li><code>p</code></li>
-                <li><code>ul</code></li>
-                <li><code>ol</code></li>
-            </ul>
-        </li>
-        <li>image can be:
-            <ul>
-                <li><code>img</code></li>
-                <li><code>video</code></li>
-                <li><code>iframe</code>
-                    <ul>
-                        <li>Vimeo video</li>
-                        <li>YouTube video</li>
-                        <li>any web page</li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Applying left-right layout</h2>
-    <ul>
-        <li>set <code>section</code> element class to:
-            <ul>
-                <li><code>imgtext</code> for image on left</li>
-                <li><code>textimg</code> for image on right</li>
-            </ul>
-        </li>
-        <li>example of setting a class:
-            <pre>&lt;section class="imgtext"&gt;</pre>
-        </li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Details about left-right template</h2>
-    <ul>
-        <li>
-            difference between having image on right or left is in the class, not the order
-            <ul>
-                <li>but perhaps it is better to keep the order also in the code, not only by styles</li>
-                <li>anyway, when changing the layout to the other one, it is enough just to change the class</li>
-            </ul>
-        </li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Details about left-right template</h2>
-    <img src="img/elevation.png">
-    <ul>
-        <li>vertical size of text or image is not limited which means that one has to keep the right ratio</li>
-        <li>there are always just two elements under the <code>section</code> element</li>
-        <li>
-            any heading level can be used
-            <ul>
-                <li>heading element is not involved in the layout</li>
-            </ul>
-        </li>
-    </ul>
-</section>
-<section class="imgtext">
-    <h2>Image size in left-right template</h2>
-    <ul>
-        <li>the width:height ratio should be 9:10</li>
-        <li>square image (1:1) is safe way</li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Disadvantages of left-right template</h2>
-    <ul>
-        <li>text is pushed</li>
-        <li>to the left/right</li>
-        <li>if the lines are</li>
-        <li>short</li>
-    </ul>
-    <img src="img/elevation.png">
-</section>
-<section class="imgtext">
-    <h2>Vimeo video as <code>iframe</code></h2>
-    <h3>GRASS GIS 7: your reliable geospatial number cruncher &mdash; Markus Neteler</h3>
-    <!-- using a bit lighter green color for vimeo then for headings -->
-    <iframe src="http://player.vimeo.com/video/106874424?color=00AA00" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    <p>
-        GRASS&nbsp;GIS looks
-        back to the longest development history in the FOSS4G community.
-        Having been available for 30 years, a lot of innovation has been
-        put into the new GRASS&nbsp;GIS&nbsp;7 release...
-    </p>
-</section>
-<section>
-    <h2>Left-right layout with arbitrary elements</h2>
-    <div class="left">
-        <p>
-            Left
-        <ul>
-            <li>set class left for the element which should be on left</li>
-            <li>any element be used</li>
-            <li>common choice is <code>div</code> element which then contains more elements</li>
-        </ul>
-    </div>
-    <div class="right">
-        <p>
-            Right-aligned
-        <ul>
-            <li>set class right for the element which should be on right</li>
-            <li>the right element can be the same as left one or different</li>
-            <li>text is still aligned to the left</li>
-        </ul>
-    </div>
-</section>
-<section>
-    <h2>Left-right test slide</h2>
-    <div class="left" style="background-color: yellow;">class="left"</div>
-    <div class="right" style="background-color: green;">class="right"</div>
-</section>
-<!--
-<section>
-    <h2>Top-bottom test slide</h2>
-    <div class="top" style="background-color: yellow;">class="top"</div>
-    <div class="bottom" style="background-color: green;">class="bottom"</div>
-</section>
--->
-<!-- This is a generated file. Do not edit. -->
-<section>
-    <h2>Headings</h2>
-    <h3>Heading level 3</h3>
-    <ul>
-        <li>Any headings can be used but it is a good practice to use the heading hierarchically.</li>
-        <li>The level of heading is for semantic.</li>
-        <li>The size should be modified using the style attribute or by changing CSS for all.</li>
-    </ul>
-    <h4>Heading level 4</h4>
-    <ul>
-        <li>Different headings should be placed in the order without skipping.</li>
-    </ul>
-    <h4>Heading level 4</h4>
-    <ul>
-        <li>
-            It seems that a good practice is <code>h2</code> heading for slide/section headings
-            <code>h1</code> or <code>h2</code> for presentation title and <code>h3</code>
-            for subtitles.
-        </li>
-    </ul>
-</section>
-<section>
-    <h2>Lists</h2>
-    <ul>
-        <li>bullet (unordered) list are done by <code>ul</code></li>
-        <li>numbered (ordered) list are done by <code>ol</code></li>
-        <li>nested lists
-            <ol>
-                <li>nested list font size is smaller</li>
-                <li>works the same for bullet and numbered lists</li>
-                <li>you should pay attention to nesting elements
-                    <ul>
-                        <li>nested list must be inside <code>li</code> element</li>
-                        <li>if the HTML is not valid the styles will not work</li>
-                    </ul>
-                </li>
-            </ol>
-        </li>
-        <li>
-            description lists and their elements (<code>dl</code>, <code>dt</code>, <code>dd</code>)
-            do not have any special handing
-        </li>
-    </ul>
-</section>
-<section>
-    <h2>Any web page can be embedded</h2>
-    <iframe src="http://grass.osgeo.org/grass71/manuals/r.slope.aspect.html"
-        width="542" height="450px" seamless class="top">
-    </iframe>
-    <ul>
-        <li>
-            online pages to avoid screenshots or switching to different window to show a web page
-            <ul>
-                <li>
-                    by controlling the embedded web page you loose control over the slides
-                    <ul>
-                        <li>you need to click to the slide to associate keyboard with slides again</li>
-                        <li>you may consider enabling the control arrows (<code>controls</code>) for Reveal.js</li>
-                    </ul>
-                </li>
-                <li>mind the risk of not having internet access</li>
-                <li>note that if the slides are online with <code>https</code>, websites with <code>http</code> will not show</li>
-            </ul>
-        </li>
-        <li>offline pages for embedding some HTML document which we don't want to integrate</li>
-    </ul>
-</section>
-<section>
-    <h2>Large image or image at the slide bottom</h2>
-    <img src="img/elevation.png" width="40%">
-    <p>Additional text or caption.</p>
-</section>
-<section>
-    <h2>Test slides to fit screens</h2>
-    <p>
-        With all kind of slides you need to take care of their size
-        which unlike non-HTML presentations is not fixed.
-    </p>
-    <p>
-        Note that a web browser window has different aspect ratio then
-        the full screen where the presentation will be used.
-    </p>
-    <p>
-        Test your slides with different ratios, new screens and
-        projectors have 16:9, 16:10 and the classic ration is 4:3.
-    </p>
-    <p>
-        For example, Mozilla Firefox has responsive design view
-        (Tools > Web Developer > Responsive Design View)
-        where you can try different rations, e.g. 4:3 can be tested
-        as 800x600. You can also save few useful ones.
-</section>
-<!-- This is a generated file. Do not edit. -->
-<section>
-    <h2>Math using MathJax</h2>
-    <p>
-        When $a \ne 0$, there are two solutions to \(ax^2 + bx + c = 0\) and they are
-        $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 
-    <h3>Notes</h3>
-    <ul>
-        <li>syntax is \(\TeX\)</li>
-        <li>you have to be online for MathJax to work</li>
-        <li>or get an offline version of MathJax and change the Reveal.js math settings</li>
-    </ul>
+<!-- Scientific modeling -->
+<section data-background="img/grass_screenshot_2.png">
+<h1 style="text-shadow: 0 0 10px white, 0 0 9px white, 0 0 8px white, 0 0 7px white, 0 0 6px white, 0 0 5px white, 0 0 4px white, 0 0 3px white; color:black !important;">
+Computational modeling</h1>
+<aside class="notes">
+With computers we can scientifically model complex problems. Interacting with computers, however, can be unintuitive, inaccessible, hard-to-learn, decontextualized, unsituated, and uncollaborative.
+</aside>
 </section>
-<section>
-    <h3>More complicated equation</h3>
-    <p>
-        $$
-        J_\alpha(x) = \sum\limits_{m=0}^\infty
-            \frac{(-1)^m}
-                {m! \, \Gamma(m + \alpha + 1)}
-            {\bigl({\frac{x}{2}}\bigr)}^{2 m + \alpha}
-        $$
+
+<!-- Tangible Landscape -->
+<section data-background="img/tangible_landscape.jpg">
+<h2 style="text-shadow: 0 0 10px white, 0 0 9px white, 0 0 8px white, 0 0 7px white, 0 0 6px white, 0 0 5px white, 0 0 4px white, 0 0 3px white; color:black !important;">
+Developing games with</h2>
+<h1 style="text-shadow: 0 0 10px white, 0 0 9px white, 0 0 8px white, 0 0 7px white, 0 0 6px white, 0 0 5px white, 0 0 4px white, 0 0 3px white; color:black !important;">
+Tangible Landscape</h1>
+<h3 style="margin-top: 1.5em; text-shadow: 0 0 7px white, 0 0 6px white, 0 0 5px white, 0 0 5px white, 0 0 4px white, 0 0 3px white, 0 0 2px white, 0 0 1px white; color:black !important;">A tangible user interface powered by open source GIS</h3>
+<img height="250px" style="margin-top: 0.75em" src="img/logo_black.png">
 </section>
-<!-- This is a generated file. Do not edit. -->
+
+<!-- Concept -->
 <section>
-    <h2>Building the presentation</h2>
-    <h3>with Python scripts</h3>
-    <pre><code data-trim class="bash">
-./copy-common-files.py --dst-dir=build
-./build-slides.py --outdir=build --title="Custom title" \
-    --meta-description="Description of the page" --meta-author="Author Name" \
-    list.html of.html files.html with.html slides.html
-    </code></pre>
-    <pre><code data-trim class="bash">
-./build-slides.py --help
-./copy-common-files.py --help
-    </code></pre>
+<h2 style="margin-top: -0.5em">Coupling a digital and physical model of a landscape</h2><br>
+<p>Physically manifesting digital data so that you can intuitively feel and shape it with your hands</p>
+<img height="450px" src="img/tl_fill_dir_s_6.png">
+<img height="450px" src="img/tl_fill_dir_s_6_interaction.png">
+<img height="450px" src="img/tl_fill_dir_s_7.png">
 </section>
+
+<!-- Real time -->
 <section>
-    <h2>Building the presentation</h2>
-    <h3>without Python scripts</h3>
-    <ul>
-        <li>Get <code>head.html</code> and <code>foot.html</code> files.</li>
-        <li>Paste the content of these files into one file, called e.g. <code>index.html</code>.</li>
-        <li>Edit header to change title, author and description.</li>
-        <li>Use the HTML code from the example files as a starting point for your slides.</li>
-    </ul>
+<h2 style="margin-top: -0.5em">Near real-time interaction</h2>
+<video  data-autoplay height="500px" style="margin-top: 1em" controls>
+<source src="img/tl_dam.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</section>
+
+<!-- How it works -->
+<section>
+<h2 style="margin-top: -0.5em">How-it-works</h2>
+<img style="margin-top: 0.5em" height="500" src="img/system_schema.png">
+</section>
+
+<!-- Science with Tangible Landscape -->
+<section>
+<h2 style="margin-top: -0.5em">Intuitive scientific modeling with Tangible Landscape</h2>
+<br>
+<img width="25%" src="img/subsurface_1.jpg">
+<img width="25%" src="img/subsurface_2.jpg">
+<img width="40.55%" src="img/subsurface_3.jpg">
+<aside class="notes">
+Tangible Landscape is designed to make scientific data, models, and simulations easy to interact with easy to explore and understand engaging and fun!
+</aside>
+</section>
+
+<!-- How we made games for Tangible Landscape -->
+<section>
+<h2 style="margin-top: -2em">Scientific gaming</h2>
+<br>
+<p>To make scientific problem solving a game we need:</p>
+<ul>
+<li>goals</li>
+<li>rules</li>
+<li>interactivity</li>
+<li>challenging tasks</li>
+<li>scores</li>
+</ul>
+</section>
+
+<!-- Serious gaming with Tangible Landscape: Termites -->
+<section>
+<h2 style="margin-top: -0.5em">Termite game</h2>
+<br>
+<img width="28%" src="img/termite_game_1.jpg">
+<img width="28%" src="img/termite_game_2.jpg">
+<img width="28%" src="img/termite_game_3.jpg">
+</section>
+
+<!-- Serious gaming with Tangible Landscape: Coastal -->
+<section>
+<h2 style="margin-top: -0.5em">Coastal game</h2>
+<br>
+<img width="22%" src="img/tl_coastal_1s.png">
+<img width="22%" src="img/tl_coastal_2s.png">
+<img width="22%" src="img/tl_coastal_3s.png">
+<img width="22%" src="img/tl_coastal_4s.png">
 </section>
 <!-- This is a generated file. Do not edit. -->
         </div>  <!-- slides -->
