@@ -1,5 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,700);
+
 /**
  * A simple theme for reveal.js presentations, similar
  * to the default theme. The accent color is darkblue.
@@ -11,16 +13,34 @@
  * GLOBAL STYLES
  *********************************************/
 
+ @font-face{
+     font-family: 'Fira Sans';
+     src: url('../../lib/font/fira/FiraSans-Regular.eot');
+     src: local('Fira Sans Regular'),
+          url('../../lib/font/fira/FiraSans-Regular.eot') format('embedded-opentype'),
+          url('../../lib/font/fira/FiraSans-Regular.woff') format('woff'),
+          url('../../lib/font/fira/FiraSans-Regular.ttf') format('truetype');
+     font-weight: 400;
+     font-style: normal;
+ }
+
+
+
+/*
 @font-face{
-    font-family: 'Fira Sans';
-    src: url('../../lib/font/fira/FiraSans-Regular.eot');
-    src: local('Fira Sans Regular'),
-         url('../../lib/font/fira/FiraSans-Regular.eot') format('embedded-opentype'),
-         url('../../lib/font/fira/FiraSans-Regular.woff') format('woff'),
-         url('../../lib/font/fira/FiraSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+  font-family: 'Fira Sans', sans-serif;
 }
+
+
+@font-face{
+  font-family: 'Raleway', sans-serif;
+}
+
+@font-face{
+  font-family: 'Lato', sans-serif;
+}
+
+*/
 
 body {
   background: #fff;
@@ -55,16 +75,16 @@ body {
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 3.77em; }
+  font-size: 1em; }
 
 .reveal h2 {
-  font-size: 2.11em; }
+  font-size: 0.75em; }
 
 .reveal h3 {
-  font-size: 1.55em; }
+  font-size: 0.5em; }
 
 .reveal h4 {
-  font-size: 1em; }
+  font-size: 0.32em; }
 
 .reveal h1 {
   text-shadow: none; }
